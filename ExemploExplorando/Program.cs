@@ -56,3 +56,108 @@ string dt = "12-05-2013";
 Console.WriteLine(DateOnly.Parse(dt));
 
 
+
+
+//Tratando exeções
+
+try
+{
+//Ler um arquivo
+
+    string[] linhas = File.ReadAllLines("Arquivos/arquivo_Leitura.txt");
+
+    Console.WriteLine("\n\nLEITURA DE ARQUIVOS");
+    foreach(string show in linhas)
+    {
+        Console.WriteLine(show);
+    }
+}catch(FileNotFoundException ex)
+{
+    Console.WriteLine($"Ocorreu um erro de leitura do arquivo. Arquivo não encontrado. \n{ex.Message}"); //Exeção expecifica.
+}catch(Exception ex)
+{
+    Console.WriteLine($"Ocorreu uma exeção generica. \n{ex.Message}"); //Exeção generica.
+}finally
+{
+    Console.WriteLine("Chegou aqui");//No Finally independente de ocorrer uma exeção, ele é execultado.
+}
+
+
+
+
+
+//Coleções Fila
+Console.WriteLine("\n\nFILA");
+
+Queue<int> fila = new Queue<int>();
+
+//Adicionar a fila
+fila.Enqueue(5);
+fila.Enqueue(2);
+fila.Enqueue(9);
+
+//Proximo da fila
+fila.Dequeue();
+
+//Mostrar fila
+foreach(int show in fila)
+{
+    Console.WriteLine(show);
+}
+
+
+
+
+
+//Coleções Pilha
+Console.WriteLine("\n\nPILHA");
+
+Stack<int> pilha = new Stack<int>();
+
+//Adicionar a pilha
+pilha.Push(3);
+pilha.Push(10);
+pilha.Push(8);
+
+//Proximo da pilha
+pilha.Pop();
+
+//Mostrar pilha
+foreach(int show in pilha)
+{
+    Console.WriteLine(show);
+}
+
+
+
+
+
+//Coleções Dictionary
+Console.WriteLine("\n\nDictionary");
+
+Dictionary<string,string> estados = new Dictionary<string, string>();
+
+//Adicionar a Dictionary
+estados.Add("SP","São Paulo");
+estados.Add("BA","Bahia");
+estados.Add("MG","Minas Gerais");
+
+//PRemover do Dictionary
+estados.Remove("BA");
+
+//Alterar Dictionary
+estados["SP"] = "Novo São Paulo";
+
+//Acessar um valor Dictionary
+Console.WriteLine(estados["SP"]);
+
+//Se existe tal chave Dictionary
+Console.WriteLine(estados.ContainsKey);
+
+//Mostrar Dictionary
+foreach(var show in estados)
+{
+    Console.WriteLine($"Chave {show.Key}, Valor {show.Value}");
+}
+
+
