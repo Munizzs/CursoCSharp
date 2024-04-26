@@ -18,6 +18,13 @@ namespace ExemploExplorando.Models
             Nome = nome;
             Sobrenome = sobre;
         }
+
+        public void Descontruct(out String nome,out string sobre)
+        {
+            nome = Nome;
+            sobre = Sobrenome;
+        }
+
         private string _nome; 
 
         public string Sobrenome { get; set; }

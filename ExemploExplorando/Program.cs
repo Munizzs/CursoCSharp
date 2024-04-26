@@ -64,10 +64,10 @@ try
 {
 //Ler um arquivo
 
-    string[] linhas = File.ReadAllLines("Arquivos/arquivo_Leitura.txt");
+    string[] linha = File.ReadAllLines("Arquivos/arquivo_Leitura.txt");
 
     Console.WriteLine("\n\nLEITURA DE ARQUIVOS");
-    foreach(string show in linhas)
+    foreach(string show in linha)
     {
         Console.WriteLine(show);
     }
@@ -133,7 +133,7 @@ foreach(int show in pilha)
 
 
 //Coleções Dictionary
-Console.WriteLine("\n\nDictionary");
+Console.WriteLine("\n\nDICTIONARY");
 
 Dictionary<string,string> estados = new Dictionary<string, string>();
 
@@ -159,5 +159,51 @@ foreach(var show in estados)
 {
     Console.WriteLine($"Chave {show.Key}, Valor {show.Value}");
 }
+
+
+
+
+
+//Tuplas
+Console.WriteLine("\n\nTUPLA");
+(int ID, string Nome, string) tupla = (1,"Matheus","Muniz"); //Unico que pode ser nomeado.
+ValueTuple<int, string, string> tupla2 = (1,"Matheus","Muniz");
+var tupla3 = Tuple.Create (1,"Matheus","Muniz");
+
+Console.WriteLine($"ID {tupla.ID}");
+Console.WriteLine($"Nome {tupla.Nome}");
+Console.WriteLine($"Sobrenome {tupla.Item3}");
+
+LeituraArquivo arq = new LeituraArquivo();
+
+var (Sucesso,linhas,qtdLinhas) = arq.LerArquivo("arquivos/arquivoLeitura.txt");
+//var (Sucesso,linhas,_) = arq.LerArquivo("arquivos/arquivoLeitura.txt"); O _ serve como descarte
+
+if(Sucesso)
+{
+    Console.WriteLine("Quantidade de linhas: "+qtdLinhas);
+    foreach(string ver in linhas)
+    {
+        Console.WriteLine(ver);
+    }
+}else
+{
+    System.Console.WriteLine("Não foi possivel ler o arquivo");
+}
+
+//(string nome, string sobrenome) = p2; chamando o desconstrutor
+
+
+
+//IF ternario
+
+int n = 12;
+bool ehPar=false;
+
+ehPar = n % 2 == 0;
+Console.WriteLine($"\n\nO numero {n} é " +(ehPar ? "par" : "impar"));
+
+
+
 
 
