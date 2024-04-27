@@ -1,5 +1,6 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization;
+using Newtonsoft.Json;
 
 Pessoa p1 = new Pessoa("Jorge","Silva");
 
@@ -202,6 +203,43 @@ bool ehPar=false;
 
 ehPar = n % 2 == 0;
 Console.WriteLine($"\n\nO numero {n} é " +(ehPar ? "par" : "impar"));
+
+
+
+
+//nuget baixado de convertor Json
+Console.WriteLine("\n\n\n\n");
+
+List<Vendas> listVendas = new List<Vendas>();
+
+DateTime dataVenda = DateTime.Now;
+
+Vendas v1 = new Vendas(1,"Material de Escritorio",25.00M,dataVenda);
+Vendas v2 = new Vendas(2,"Licença de Software",125.00M,dataVenda);
+
+listVendas.Add(v1);
+listVendas.Add(v2);
+
+string serialarizado = JsonConvert.SerializeObject(listVendas, Formatting.Indented);
+
+File.WriteAllText("Arquivos/vendas.json",serialarizado);
+
+Console.WriteLine(serialarizado);
+
+//Version se o json é valido: https://codebeautify.org/jsonviewer
+
+/*
+Fazendo o processo ao contrario
+
+string conteudo = File.ReadAllText("Arquivos/vendas.json");
+
+List<Vendas> listVendas = JsonConvert.DeserializeObject<List<Vendas>>(conteudo);
+
+foreach(Vendas venda in listVendas)
+{
+    Console.WriteLine($"Id: {venda.Id}, Produto: {venda.Produto}, Preço: {venda.Preco}, Data: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}");
+}
+*/
 
 
 

@@ -27,3 +27,6 @@ C:\Users\Ideapad\Documents\Programation\DIO\BootCamp.Net\Aulas\ExemploExplorando
 C:\Users\Ideapad\Documents\Programation\DIO\BootCamp.Net\Aulas\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.pdb
 C:\Users\Ideapad\Documents\Programation\DIO\BootCamp.Net\Aulas\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.genruntimeconfig.cache
 C:\Users\Ideapad\Documents\Programation\DIO\BootCamp.Net\Aulas\ExemploExplorando\obj\Debug\net8.0\ref\ExemploExplorando.dll
+C:\Users\Ideapad\Documents\Programation\DIO\BootCamp.Net\Aulas\ExemploExplorando\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Ideapad\Documents\Programation\DIO\BootCamp.Net\Aulas\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.csproj.AssemblyReference.cache
+C:\Users\Ideapad\Documents\Programation\DIO\BootCamp.Net\Aulas\ExemploExplorando\obj\Debug\net8.0\ExemploE.B7F01285.Up2Date

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "3yB8ZtVtVdBE8B/tsh+zsqlr1daWY49PoLRyLnjbwOG3SqOJvL0styw7YnQVWwCKsvTE7I22j5N4kdqE3WF5NQ==",
+  "dgSpecHash": "BculoRKQX7eYeX1pbHgZU1BD42HyvCtmQO9jWiLxCHcYcrYkNrKsXSRbm4qrR1xFXj7vJgnB/RgKY39J+T9Q5Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ideapad\\Documents\\Programation\\DIO\\BootCamp.Net\\Aulas\\ExemploExplorando\\ExemploExplorando.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Ideapad\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
