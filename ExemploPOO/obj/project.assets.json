@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ideapad\\Documents\\Programation\\DIO\\BootCamp.Net\\Aulas\\ExemploExplorando\\ExemploExplorando.csproj",
-      "projectName": "ExemploExplorando",
-      "projectPath": "C:\\Users\\Ideapad\\Documents\\Programation\\DIO\\BootCamp.Net\\Aulas\\ExemploExplorando\\ExemploExplorando.csproj",
+      "projectUniqueName": "C:\\Users\\Ideapad\\Documents\\Programation\\DIO\\BootCamp.Net\\Aulas\\ExemploPOO\\ExemploPOO.csproj",
+      "projectName": "ExemploPOO",
+      "projectPath": "C:\\Users\\Ideapad\\Documents\\Programation\\DIO\\BootCamp.Net\\Aulas\\ExemploPOO\\ExemploPOO.csproj",
       "packagesPath": "C:\\Users\\Ideapad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ideapad\\Documents\\Programation\\DIO\\BootCamp.Net\\Aulas\\ExemploExplorando\\obj\\",
+      "outputPath": "C:\\Users\\Ideapad\\Documents\\Programation\\DIO\\BootCamp.Net\\Aulas\\ExemploPOO\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ideapad\\AppData\\Roaming\\NuGet\\NuGet.Config"

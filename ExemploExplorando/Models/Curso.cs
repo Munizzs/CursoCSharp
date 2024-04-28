@@ -27,13 +27,9 @@ namespace ExemploExplorando.Models
 
         public void Listar()
         {
-            int cont=1;
             foreach(Pessoa show in Alunos)
             {
-                //string txt = "#"+cont+" |"+show.NomeCompleto+"|"; // Concactenização
-                string txt = $"#{cont} |{show.NomeCompleto}|"; //Interpolação
-                Console.WriteLine(txt);
-                cont++;
+                Console.WriteLine($"|{show.NomeCompleto}|");
             }
         }
      }

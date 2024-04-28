@@ -1,6 +1,6 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization;
-using Newtonsoft.Json;
+//using Newtonsoft.Json;
 
 Pessoa p1 = new Pessoa("Jorge","Silva");
 
@@ -220,11 +220,11 @@ Vendas v2 = new Vendas(2,"Licença de Software",125.00M,dataVenda);
 listVendas.Add(v1);
 listVendas.Add(v2);
 
-string serialarizado = JsonConvert.SerializeObject(listVendas, Formatting.Indented);
+//string serialarizado = JsonConvert.SerializeObject(listVendas, Formatting.Indented);
 
-File.WriteAllText("Arquivos/vendas.json",serialarizado);
+//File.WriteAllText("Arquivos/vendas.json",serialarizado);
 
-Console.WriteLine(serialarizado);
+//Console.WriteLine(serialarizado);
 
 //Version se o json é valido: https://codebeautify.org/jsonviewer
 
@@ -240,6 +240,7 @@ foreach(Vendas venda in listVendas)
     Console.WriteLine($"Id: {venda.Id}, Produto: {venda.Produto}, Preço: {venda.Preco}, Data: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}");
 }
 */
+
 
 
 
