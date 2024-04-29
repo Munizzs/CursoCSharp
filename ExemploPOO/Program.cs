@@ -1,5 +1,29 @@
-﻿using ExemploPOO.Models;
+﻿using ExemploPOO.Interfaces;
+using ExemploPOO.Models;
 using ExemploPOO.obj;
+
+//Interface
+
+ICalculadora calc = new Calculadora(); //A interface recebe uma classe que tem o contrato ou implementado
+
+Console.WriteLine("\n\n\n\n");
+
+//Classe Object
+
+Computador c =new Computador();
+
+Console.WriteLine(c.ToString()); 
+
+
+Console.WriteLine("\n\n\n\n");
+
+Corrente cr = new Corrente();
+cr.Creditar(100);
+cr.ExibirSaldo();
+
+
+System.Console.WriteLine("\n\n\n\n");
+
 
 Aluno a1 = new Aluno();
 a1.Nome = "Carlos";
@@ -13,7 +37,7 @@ prof1.Idade = 29;
 prof1.Salario = 3010M;
 prof1.Apresentar();
 
-System.Console.WriteLine("\n\n\n\n");
+System.Console.WriteLine("\n\n\n");
 
 
 

@@ -8,6 +8,16 @@ namespace ExemploPOO.obj
     public class Pessoa
     {
         public string Nome { get; set; }
+
+        public Pessoa(String nome)
+        {
+            Nome = nome;
+        }
+
+        public Pessoa()
+        {
+            
+        }
         public int Idade { get; set; }
 
         public virtual void Apresentar() //virtual quer dizer que esse metodo pode ser sobreescrito se desejar

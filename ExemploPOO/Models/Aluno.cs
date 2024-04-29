@@ -8,6 +8,16 @@ namespace ExemploPOO.Models
 {
     public class Aluno : Pessoa //Herança - Aluno esta herdando a classe Pessoa
     {
+    
+        public Aluno(string nome) : base(nome) //Recebeu o contruto da classe Principal
+        {
+        }
+
+        public Aluno()
+        {
+            
+        }
+
         public int Nota { get; set; }
 
         public override void Apresentar() //Fazendo o polimorfismo do metodo da classe principal/Pai
